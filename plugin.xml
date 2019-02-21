@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-firstplugin"
+        version="0.0.0">
+    
+    <name>First Plugin</name>
+    
+    <description>This is my first plugin.</description>
+    
+    <keywords>Cordova,PhoneGap,plugin,app,availability,installed, URIScheme,URI,Scheme,PackageName,Package,Name,iOS,Android</keywords>
+    
+    <repohttps://github.com/cding45/first-plugin.git</repo>
+    <issue>https://github.com/cding45/first-plugin/issues</issue>
+    
+    <license>MIT</license>
+    
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    
+    <js-module src="www/FirstPlugin.js" name="FirstPlugin">
+        <clobbers target="FirstPlugin" />
+    </js-module>
+    
+    <!-- iOS -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="FirstPlugin">
+                <param name="ios-package" value="FirstPlugin" />
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/FirstPlugin.h" />
+        <source-file src="src/ios/FirstPlugin.m" />
+    </platform>
+    
+    <!-- Android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FirstPlugin">
+                <param name="android-package" value="com.cding45.FirstPlugin" />
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/FirstPlugin.java" target-dir="src/com/cding45/" />
+    </platform>
+    
+</plugin>

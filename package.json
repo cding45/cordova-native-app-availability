@@ -1,0 +1,47 @@
+{
+  "name": "cordova-plugin-firstplugin",
+  "version": "0.0.0",
+  "description": "my first plugin",
+  "cordova": {
+    "id": "cordova-plugin-firstplugin",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cding45/first-plugin.git"
+  },
+  "keywords": [
+    "Cordova",
+    "PhoneGap",
+    "plugin",
+    "app",
+    "availability",
+    "installed",
+    "URIScheme",
+    "URI",
+    "Scheme",
+    "PackageName",
+    "Package",
+    "Name",
+    "iOS",
+    "Android",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Changmin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cding45/first-plugin/issues"
+  },
+  "homepage": "https://github.com/cding45/first-plugin#readme"
+}
