@@ -1,3 +1,12 @@
+import org.apache.cordova.CordovaPlugin; 
+import org.apache.cordova.api.CordovaPlugin;
+import org.apache.cordova.api.PluginResult;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import org.apache.cordova.PluginResult;
+
 public class FirstPlugin extends CordovaPlugin {
 	private static final String TAG = "FirstPlugin";
 	
