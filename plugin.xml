@@ -11,7 +11,7 @@
     
     <keywords>Cordova,PhoneGap,plugin,app,availability,installed, URIScheme,URI,Scheme,PackageName,Package,Name,iOS,Android</keywords>
     
-    <repohttps://github.com/cding45/first-plugin.git</repo>
+    <repo>https://github.com/cding45/first-plugin.git</repo>
     <issue>https://github.com/cding45/first-plugin/issues</issue>
     
     <license>MIT</license>
