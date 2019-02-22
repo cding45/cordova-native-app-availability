@@ -44,7 +44,7 @@
             </feature>
         </config-file>
         
-        <source-file src="src/android/FirstPlugin.java" target-dir="src/com/cding45/" />
+        <source-file src="src/android/com/cding45/FirstPlugin.java" target-dir="src/com/cding45/" />
     </platform>
     
 </plugin>
