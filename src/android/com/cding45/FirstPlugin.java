@@ -3,7 +3,7 @@ public class FirstPlugin extends CordovaPlugin {
 	
 	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 		super.initialize(cordova, webView);
-		Log.d(TAG, "Initializing FirstPlugin")
+		Log.d(TAG, "Initializing FirstPlugin");
 	}
 	
 	public boolean execute(String action, JSONArray args, final CallbackContect callbackContext) throws JSONException {
