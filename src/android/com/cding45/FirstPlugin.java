@@ -1,6 +1,10 @@
+package com.cding45
+
 import org.apache.cordova.CordovaPlugin; 
-import org.apache.cordova.api.CordovaPlugin;
-import org.apache.cordova.api.PluginResult;
+import org.apache.cordova.CordovaInterface;
+import org.apache.cordova.CordovaWebView;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.Log;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -15,7 +19,7 @@ public class FirstPlugin extends CordovaPlugin {
 		Log.d(TAG, "Initializing FirstPlugin");
 	}
 	
-	public boolean execute(String action, JSONArray args, final CallbackContect callbackContext) throws JSONException {
+	public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
 		if(actiong.equals("echo")) {
 			String phrase = args.getString(0);
 			Log.d(TAG, phrase);
