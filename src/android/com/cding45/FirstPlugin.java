@@ -20,7 +20,7 @@ public class FirstPlugin extends CordovaPlugin {
 	}
 	
 	public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
-		if(actiong.equals("echo")) {
+		if(action.equals("echo")) {
 			String phrase = args.getString(0);
 			LOG.d(TAG, phrase);
 		}
