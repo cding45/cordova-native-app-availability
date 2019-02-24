@@ -4,7 +4,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.CallbackContext;
-import org.apache.cordova.Log;
+import org.apache.cordova.LOG;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -16,13 +16,13 @@ public class FirstPlugin extends CordovaPlugin {
 	
 	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 		super.initialize(cordova, webView);
-		Log.d(TAG, "Initializing FirstPlugin");
+		LOG.d(TAG, "Initializing FirstPlugin");
 	}
 	
 	public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
 		if(actiong.equals("echo")) {
 			String phrase = args.getString(0);
-			Log.d(TAG, phrase);
+			LOG.d(TAG, phrase);
 		}
 		
 		return true;
