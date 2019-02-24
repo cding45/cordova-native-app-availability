@@ -1,4 +1,4 @@
-package com.cding45
+package com.cding45;
 
 import org.apache.cordova.CordovaPlugin; 
 import org.apache.cordova.CordovaInterface;
