@@ -24,3 +24,5 @@
 	CDVPluginResult *result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:iso8601String];
 	[self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
 }
+
+@end

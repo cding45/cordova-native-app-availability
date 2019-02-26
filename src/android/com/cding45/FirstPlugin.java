@@ -8,9 +8,8 @@ import org.apache.cordova.PluginResult;
 import org.apache.cordova.LOG;
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
-import org.apache.cordova.PluginResult;
+import java.util.Date;
 
 public class FirstPlugin extends CordovaPlugin {
 	private static final String TAG = "FirstPlugin";
@@ -24,8 +23,11 @@ public class FirstPlugin extends CordovaPlugin {
 		if(action.equals("echo")) {
 			String phrase = args.getString(0);
 			LOG.d(TAG, phrase);
+			callbackContext.success();
+			return true;
 		} else if (action.equals("getDate")) {
 			final PluginResult result = new PluginResult(PluginResult.Status.OK, (new Date()).toString());
+			callbackContext.sendPluginResult(result);
 		}
 		
 		return true;
